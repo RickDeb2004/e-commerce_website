@@ -41,6 +41,8 @@ const SignUp = () => {
           location: "",
           shopName: "",
           images: [],
+          ownerName: "",
+          phoneNumber: "",
         });
         // ...
       })
@@ -93,8 +95,8 @@ const SignUp = () => {
             <h3>SignUp</h3>
             <form className="mt-4">
               <div className="toggle">
-                <Button onClick={() => setMode("buyer")} >Buyer</Button>
-                <Button onClick={() => setMode("seller")} >Seller</Button>
+                <Button onClick={() => setMode("buyer")}>Buyer</Button>
+                <Button onClick={() => setMode("seller")}>Seller</Button>
               </div>
 
               {mode === "buyer" && (
@@ -161,6 +163,27 @@ const SignUp = () => {
 
               {mode === "seller" && (
                 <div className="seller-form">
+                  <div className="form-group mb-4 w-100">
+                    <TextField
+                      id="phone number"
+                      name="Phone Number"
+                      label="Phone Number"
+                      className="w-100"
+                      onChange={onChangeField}
+                      value={formFields.phoneNumber}
+                    />
+                  </div>
+                  <div className="form-group mb-4 w-100">
+                    <TextField
+                      id="phone number"
+                      name="Phone Number"
+                      label="Phone Number"
+                      className="w-100"
+                      onChange={onChangeField}
+                      value={formFields.phoneNumber}
+                    />
+                  </div>
+
                   <div className="form-group mb-4 w-100">
                     <TextField
                       id="location"
