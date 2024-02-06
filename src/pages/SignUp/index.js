@@ -165,12 +165,12 @@ const SignUp = () => {
                 <div className="seller-form">
                   <div className="form-group mb-4 w-100">
                     <TextField
-                      id="phone number"
-                      name="Phone Number"
-                      label="Phone Number"
+                      id="name"
+                      name="name"
+                      label="name"
                       className="w-100"
                       onChange={onChangeField}
-                      value={formFields.phoneNumber}
+                      value={formFields.ownerName}
                     />
                   </div>
                   <div className="form-group mb-4 w-100">
