@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.cardMedia {
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  /* Adjust breakpoint for mobile */
+  .cardMedia {
+    height: auto; /* Adjust height for mobile */
+  }
+}
